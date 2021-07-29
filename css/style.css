@@ -8,14 +8,11 @@
 		04 Header
 		05 Hero
 		06 Resume
-		07 Services
-		08 Numbers
-		09 Portfolio
-		10 Testimonials
-		11 Blog
-		12 Contact
-		13 Footer
-		14 Responsive
+		07 Strengths
+		08 Portfolio
+		09 Contact
+		10 Footer
+		11 Responsive
 	
 
 ---------------------------------------------------------------- */
@@ -424,6 +421,7 @@ span, a, a:hover {
   -webkit-transform: translateY(100px);
           transform: translateY(100px);
 }
+
 .nav-scroll .icon-bar {
   color: #222;
 }
@@ -472,42 +470,14 @@ span, a, a:hover {
   width: 100%;
   text-align: center;
   color: #fff;
-  font-size: 13px;
   z-index: 8;
-}
-.header .arrow i {
-  position: relative;
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-}
-.header .arrow i:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  z-index: -1;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-}
-.header .arrow i:hover:after {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  opacity: 0;
-  -webkit-transition: all .5s;
-  transition: all .5s;
 }
 
 /* ----------------------------------------------------------------
 				05 Hero
 -----------------------------------------------------------------*/
 .hero .hero-img {
-  padding: 0 20px 0 0;
+  padding: px 20px 0 0;
   position: relative;
   -webkit-transition: all .4s;
   transition: all .4s;
@@ -541,11 +511,11 @@ span, a, a:hover {
   font-weight: 700;
 }
 .hero .content .social-icon span {
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
   text-align: center;
-  font-size: 12px;
+  font-size: 30px;
   border: 1px solid #eee;
   margin: 15px 5px 15px 0;
   cursor: pointer;
@@ -561,81 +531,19 @@ span, a, a:hover {
   margin-top: 30px;
 }
 
-/* ----------------------------------------------------------------
-				06 Resume
------------------------------------------------------------------*/
-.resume {
-  background-attachment: fixed;
-  padding: 50px 0;
-}
-.resume .title {
-  margin-bottom: 40px;
-  letter-spacing: 2px;
-}
-.resume .item h5 {
-  font-size: 25px;
-  font-weight: 400;
-}
-.resume .item .icon {
-  font-size: 30px;
-  color: #f50404;
-  margin-bottom: 15px;
-}
-.resume .item li {
-  margin-bottom: 30px;
-}
-.resume .item li:last-child {
-  margin-bottom: 0;
-}
-.resume .item li h6 {
-  color: #eee;
-  font-size: 16px;
-  font-weight: 600;
-  font-family: inherit;
-  margin-bottom: 5px;
-}
-.resume .item li p {
-  color: #999;
-}
-.resume .skills .skill {
-  margin-bottom: 30px;
-}
-.resume .skills .skill:last-child {
-  margin-bottom: 0;
-}
-.resume .skills .skill h6 {
-  margin-bottom: 8px;
-  font-size: 14px;
-  font-weight: 400;
-}
-.resume .skills .skill h6 span {
-  padding: 4px 8px 0;
-  font-size: 10px;
-  float: right;
-  background: rgba(80, 80, 80, 0.3);
-  position: relative;
-  top: 8px;
-}
-.resume .skills .skill .skills-progress {
-  position: relative;
-  width: 100%;
-  height: 4px;
-  background: rgba(80, 80, 80, 0.3);
-}
-.resume .skills .skill .skills-progress span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 5%;
-  background: #f50404;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+.hero .arrow{
+  text-align: center;
 }
 
+
 /* ----------------------------------------------------------------
-				07 Services
+				07 Strengths
 -----------------------------------------------------------------*/
+.services{
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .services .item {
   text-align: center;
   padding: 40px 15px;
@@ -674,27 +582,14 @@ span, a, a:hover {
   border-bottom: 1px solid #eee;
 }
 
-/* ----------------------------------------------------------------
-				08 Numbers
------------------------------------------------------------------*/
-.numbers {
-  padding: 50px 0;
-}
-.numbers .item {
+.services .arrow{
   text-align: center;
-}
-.numbers .item .icon {
-  font-size: 30px;
-  color: #f50404;
-  margin-bottom: 30px;
-}
-.numbers .item h2 {
-  font-weight: 200;
-  margin-bottom: 10px;
+  color: #fff;
 }
 
+
 /* ----------------------------------------------------------------
-				09 Portfolio
+				08 Portfolio
 -----------------------------------------------------------------*/
 .portfolio {
   overflow: hidden;
@@ -799,152 +694,73 @@ span, a, a:hover {
   opacity: 1;
 }
 
-/* ----------------------------------------------------------------
-				10 Testimonials
------------------------------------------------------------------*/
-.testimonials {
-  background-attachment: fixed;
-}
-.testimonials .icon {
-  font-size: 40px;
-  margin-bottom: 15px;
-}
-.testimonials .citem p {
-  font-size: 18px;
-  word-spacing: 2px;
-  margin-bottom: 15px;
-}
-.testimonials .citem h5 {
-  font-size: 16px;
-  display: inline-block;
-  padding-right: 10px;
-  margin-right: 10px;
-  position: relative;
-}
-.testimonials .citem h5:after {
-  content: "|";
-  position: absolute;
-  right: -5px;
-  bottom: 4px;
-}
-.testimonials .citem h6 {
-  display: inline-block;
-  font-weight: 400;
-  font-size: 14px;
-  margin: 15px 0;
+.portfolio .arrow{
+  text-align: center;
 }
 
-/* ----------------------------------------------------------------
-				11 Blog
------------------------------------------------------------------*/
-.blog .owl-carousel .owl-stage-outer {
-  padding: 15px 0;
-}
-.blog .pitem {
-  -webkit-box-shadow: 0px 0px 30px -4px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 30px -4px rgba(0, 0, 0, 0.1);
-}
-.blog .pitem .post-img {
-  position: relative;
-}
-.blog .pitem .post-img .tag {
-  position: absolute;
-  bottom: -15px;
-  right: 15px;
-  padding: 8px 22px;
-  font-size: 11px;
-  background: #f50404;
-  color: #fff;
-  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
-}
-.blog .pitem .content {
-  padding: 45px 15px 15px;
-  background: #fff;
-}
-.blog .pitem h3 {
-  font-size: 22px;
-  font-weight: 700;
-  color: #666;
-  margin-bottom: 15px;
-}
-.blog .pitem p {
-  font-size: 14px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #f7f7f7;
-}
-.blog .pitem .info {
-  padding-top: 15px;
-}
-.blog .pitem .info span {
-  font-size: 12px;
-  color: #999;
-}
-.blog .pitem .info .more {
-  color: #f50404;
-  border-bottom: 1px solid #eee;
-}
-.blog .pitem .info .by {
-  float: right;
-}
 
 /* ----------------------------------------------------------------
-				12 Contact
+				09 Contact
 -----------------------------------------------------------------*/
 .contact {
   background-attachment: fixed;
 }
-.contact .form input[type='text'],
-.contact .form input[type='email'],
-.contact .form textarea {
-  width: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 10px;
-  background: rgba(10, 10, 10, 0.4);
-  color: #fff;
-  margin-bottom: 15px;
-}
-.contact .form textarea {
-  height: 160px;
-  max-height: 160px;
-  max-width: 100%;
-}
-.contact .form button {
-  background: transparent;
-  border: 0;
-}
-.contact .info {
-  margin-top: 50px;
-}
-.contact .info .item .icon {
-  float: left;
-  padding-top: 5px;
-  font-size: 25px;
-  color: #f50404;
-}
-.contact .info .item .cont {
-  margin-left: 45px;
-  padding-left: 15px;
-  border-left: 1px solid rgba(200, 200, 200, 0.4);
-}
-.contact .info .item .cont h6 {
-  font-size: 14px;
+
+    .contact .form input[type='text'],
+    .contact .form input[type='email'],
+    .contact .form textarea {
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 10px;
+      background: rgba(10, 10, 10, 0.4);
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    .contact .form textarea {
+      height: 160px;
+      max-height: 160px;
+      max-width: 100%;
+    }
+
+    .contact .form button {
+      background: transparent;
+      border: 0;
+    }
+
+    .contact .info {
+      margin-top: 50px;
+    }
+
+    .contact .info .item .icon {
+      float: left;
+      padding-top: 5px;
+      font-size: 25px;
+      color: #f50404;
+    }
+
+    .contact .info .item .cont {
+      margin-left: 45px;
+      padding-left: 15px;
+      border-left: 1px solid rgba(200, 200, 200, 0.4);
+    }
+
+    .contact .info .item .cont h6 {
+      font-size: 14px;
 }
 
 /* ----------------------------------------------------------------
-				13 Footer
+				10 Footer
 -----------------------------------------------------------------*/
 .footer {
   padding: 50px 0;
-  background: #111;
+  background: #fff;
   text-align: center;
-}
-.footer p {
   font-size: 13px;
 }
 
 /* ----------------------------------------------------------------
-				14 Responsive
+				11 Responsive
 -----------------------------------------------------------------*/
 @media screen and (max-width: 991px) {
   .mb-md50 {
@@ -960,8 +776,7 @@ span, a, a:hover {
   }
 
   .navbar .navbar-collapse {
-    max-height: 320px;
-    overflow: auto;
+    max-height: 400px;
     background: #111;
     text-align: center;
     padding: 10px 0;

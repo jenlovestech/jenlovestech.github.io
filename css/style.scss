@@ -1,13 +1,3 @@
-/*-----------------------------------------------------------------------------------
-
-	Theme Name: Personala
-	Theme URI: http://
-	Description: The Multi-Purpose Onepage Template
-	Author: his7am
-	Author URI: http://themeforest.net/user/his7am
-	Version: 1.0
-
------------------------------------------------------------------------------------*/
 
 /* ----------------------------------------------------------------
 
@@ -19,14 +9,11 @@
 		04 Header
 		05 Hero
 		06 Resume
-		07 Services
-		08 Numbers
-		09 Portfolio
-		10 Testimonials
-		11 Blog
-		12 Contact
-		13 Footer
-		14 Responsive
+		07 Strengths
+		08 Portfolio
+		09 Contact
+		10 Footer
+		11 Responsive
 	
 
 ---------------------------------------------------------------- */
@@ -777,7 +764,7 @@ span, a, a:hover {
 }
 
 /* ----------------------------------------------------------------
-				07 Services
+				07 Strengths
 -----------------------------------------------------------------*/
 
 .services{
@@ -831,31 +818,9 @@ span, a, a:hover {
 	}
 }
 
-/* ----------------------------------------------------------------
-				08 Numbers
------------------------------------------------------------------*/
-
-.numbers{
-	padding: 50px 0;
-
-	.item{
-		text-align: center;
-
-		.icon{
-			font-size: 30px;
-			color: $main-color;
-			margin-bottom: 30px;
-		}
-
-		h2{
-			font-weight: 200;
-			margin-bottom: 10px;
-		}
-	}
-}
 
 /* ----------------------------------------------------------------
-				09 Portfolio
+				08 Portfolio
 -----------------------------------------------------------------*/
 
 .portfolio{
@@ -975,174 +940,52 @@ span, a, a:hover {
 	}
 }
 
-/* ----------------------------------------------------------------
-				10 Testimonials
------------------------------------------------------------------*/
 
-.testimonials{
+/* ----------------------------------------------------------------
+				09 Contact
+-----------------------------------------------------------------*/
+.contact {
 	background-attachment: fixed;
-
-	.icon{
-		font-size: 40px;
-		margin-bottom: 15px;
-	}
-
-	.citem{
-
-		p{
-			font-size: 18px;
-			word-spacing: 2px;
-			margin-bottom: 15px;
-		}
-
-		h5{
-			font-size: 16px;
-			display: inline-block;
-			padding-right: 10px;
-			margin-right: 10px;
-			position: relative;
-
-			&:after{
-				content: "|";
-				position: absolute;
-				right: -5px;
-				bottom: 4px;
-			}
-		}
-
-		h6{
-			display: inline-block;
-			font-weight: 400;
-			font-size: 14px;
-			margin: 15px 0;
-		}
-	}
-}
-
-/* ----------------------------------------------------------------
-				11 Blog
------------------------------------------------------------------*/
-
-.blog{
-
-	.owl-carousel .owl-stage-outer{
-		padding: 15px 0;
-	}
-
-	.pitem{
-		box-shadow: 0px 0px 30px -4px rgba(0,0,0,.1);
-
-		.post-img{
-			position: relative;
-
-			.tag{
-				position: absolute;
-				bottom: -15px;
-				right: 15px;
-				padding: 8px 22px;
-				font-size: 11px;
-				background: $main-color;
-				color: #fff;
-				box-shadow: 0px 0px 20px rgba(0,0,0,.05);
-			}
-		}
-
-		.content{
-			padding: 45px 15px 15px;
-			background: #fff;
-		}
-
-		h3{
-			font-size: 22px;
-			font-weight: 700;
-			color: #666;
-			margin-bottom: 15px;
-		}
-
-		p{
-			font-size: 14px;
-			padding-bottom: 30px;
-			border-bottom: 1px solid #f7f7f7;
-		}
-
-		.info{
-			padding-top: 15px;
-
-			span{
-				font-size: 12px;
-				color: #999;
-			}
-
-			.more{
-				color: $main-color;
-				border-bottom: 1px solid #eee;
-			}
-
-			.by{
-				float: right;
-			}
-		}
-	}
-}
+  }
+  .contact .form input[type='text'],
+  .contact .form input[type='email'],
+  .contact .form textarea {
+	width: 100%;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	padding: 10px;
+	background: rgba(10, 10, 10, 0.4);
+	color: #fff;
+	margin-bottom: 15px;
+  }
+  .contact .form textarea {
+	height: 160px;
+	max-height: 160px;
+	max-width: 100%;
+  }
+  .contact .form button {
+	background: transparent;
+	border: 0;
+  }
+  .contact .info {
+	margin-top: 50px;
+  }
+  .contact .info .item .icon {
+	float: left;
+	padding-top: 5px;
+	font-size: 25px;
+	color: #f50404;
+  }
+  .contact .info .item .cont {
+	margin-left: 45px;
+	padding-left: 15px;
+	border-left: 1px solid rgba(200, 200, 200, 0.4);
+  }
+  .contact .info .item .cont h6 {
+	font-size: 14px;
+  }
 
 /* ----------------------------------------------------------------
-				12 Contact
------------------------------------------------------------------*/
-
-.contact{
-	background-attachment: fixed;
-
-	.form{
-		input[type='text'],
-		input[type='email'],
-		textarea{
-			width: 100%;
-			border: 1px solid rgba(255,255,255,.1);
-			padding: 10px;
-			background: rgba(10,10,10,.4);
-			color: #fff;
-			margin-bottom: 15px;
-		}
-
-		textarea{
-			height: 160px;
-			max-height: 160px;
-			max-width: 100%;
-		}
-
-		button{
-			background: transparent;
-			border: 0;
-		}
-	}
-
-	.info{
-		margin-top: 50px;
-
-		.item{
-
-			.icon{
-				float: left;
-				padding-top: 5px;
-				font-size: 25px;
-				color: $main-color;
-			}
-
-			.cont{
-				margin-left: 45px;
-				padding-left: 15px;
-				border-left: 1px solid rgba(200,200,200,.4);
-
-				h6{
-					font-size: 14px;
-				}
-			}
-		}
-	}
-}
-
-/* ----------------------------------------------------------------
-				13 Footer
+				10 Footer
 -----------------------------------------------------------------*/
 
 .footer{
@@ -1156,7 +999,7 @@ span, a, a:hover {
 }
 
 /* ----------------------------------------------------------------
-				14 Responsive
+				11 Responsive
 -----------------------------------------------------------------*/
 
 @media screen and (max-width: $desk-md-screen){

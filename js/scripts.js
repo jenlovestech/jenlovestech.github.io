@@ -1,15 +1,3 @@
-/*-----------------------------------------------------------------------------------
-
-    Theme Name: Personala
-    Theme URI: http://
-    Description: The Multi-Purpose Onepage Template
-    Author: his7am
-    Author URI: http://themeforest.net/user/his7am
-    Version: 1.0
-
------------------------------------------------------------------------------------*/
-
-
 $(function() {
 
     "use strict";
@@ -49,24 +37,13 @@ $(function() {
         }
     });
 
-
-
-    // progress bar
-    wind.on('scroll', function () {
-        $(".skills-progress span").each(function () {
-            var bottom_of_object = 
-            $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = 
-            $(window).scrollTop() + $(window).height();
-            var myVal = $(this).attr('data-value');
-            if(bottom_of_window > bottom_of_object) {
-                $(this).css({
-                  width : myVal
-                });
-            }
-        });
-    });
-
+    //navbar collapse on click
+    const navLinks = document.querySelectorAll('.nav-item')
+    const menuToggle = document.getElementById('navbarSupportedContent')
+    const bsCollapse = new bootstrap.Collapse(menuToggle)
+    navLinks.forEach((l) => {
+    l.addEventListener('click', () => { bsCollapse.toggle() })
+    })
 
 
     // sections background image from data background
@@ -79,40 +56,6 @@ $(function() {
     });
 
 
-    // === owl-carousel === //
-
-    // Testimonials owlCarousel
-    $('.testimonials .owl-carousel').owlCarousel({
-        items:1,
-        loop:true,
-        margin: 15,
-        mouseDrag:false,
-        autoplay:true,
-        smartSpeed:500
-    });
-
-    // Blog owlCarousel
-    $('.blog .owl-carousel').owlCarousel({
-        loop:true,
-        margin: 30,
-        mouseDrag:false,
-        autoplay:true,
-        smartSpeed:500,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            700:{
-                items:2
-            },
-            1000:{
-                items:3
-            }
-        }
-    });
-
-
     // magnificPopup
     $('.gallery').magnificPopup({
         delegate: '.link',
@@ -121,14 +64,6 @@ $(function() {
             enabled: true
         }
     });
-
-
-    // countUp
-    $('.numbers .count').countUp({
-        delay: 10,
-        time: 1500
-    });
-
 
 });
 
@@ -170,34 +105,6 @@ $(window).on("load",function (){
 
         $(this).addClass('active').siblings().removeClass('active');
 
-    });
-
-
-    // contact form validator
-    $('#contact-form').validator();
-
-    $('#contact-form').on('submit', function (e) {
-        if (!e.isDefaultPrevented()) {
-            var url = "contact.php";
-
-            $.ajax({
-                type: "POST",
-                url: url,
-                data: $(this).serialize(),
-                success: function (data)
-                {
-                    var messageAlert = 'alert-' + data.type;
-                    var messageText = data.message;
-
-                    var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-                    if (messageAlert && messageText) {
-                        $('#contact-form').find('.messages').html(alertBox);
-                        $('#contact-form')[0].reset();
-                    }
-                }
-            });
-            return false;
-        }
     });
 
 });
