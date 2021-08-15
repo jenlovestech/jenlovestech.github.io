@@ -37,14 +37,7 @@ $(function() {
         }
     });
 
-    //navbar collapse on click
-    const navLinks = document.querySelectorAll('.nav-item')
-    const menuToggle = document.getElementById('navbarSupportedContent')
-    const bsCollapse = new bootstrap.Collapse(menuToggle)
-    navLinks.forEach((l) => {
-    l.addEventListener('click', () => { bsCollapse.toggle() })
-    })
-
+    
 
     // sections background image from data background
     var pageSection = $(".bg-img, section");
@@ -66,6 +59,14 @@ $(function() {
     });
 
 });
+
+//navbar collapse on click
+const navLinks = document.querySelectorAll('.nav-item')
+const menuToggle = document.getElementById('navbarSupportedContent')
+const bsCollapse = new bootstrap.Collapse(menuToggle)
+navLinks.forEach((l) => {
+l.addEventListener('click', () => { bsCollapse.toggle() })
+})
 
 
 // === window When Loading === //
